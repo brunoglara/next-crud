@@ -6,6 +6,20 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    {
+      pattern: /^bg-/i,
+      variants: ['responsive', 'hover', 'focus', 'active'],
+    },
+    {
+      pattern: /^to-/i,
+      variants: ['responsive', 'hover', 'focus', 'active'],
+    },
+    {
+      pattern: /^from-/i,
+      variants: ['responsive', 'hover', 'focus', 'active'],
+    },
+  ],
   theme: {
     extend: {
       backgroundImage: {
